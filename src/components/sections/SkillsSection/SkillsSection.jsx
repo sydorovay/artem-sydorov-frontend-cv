@@ -2,17 +2,21 @@ import Contacts from './Contacts/Contacts'
 import Languages from './Languages/Languages'
 import TechSkills from './TechSkills/TechSkills'
 import SoftSkills from './SoftSkills/SoftSkills'
+import Container from '../../Container/Container'
 
 import styles from './SkillsSection.module.css'
 
+
 const SkillsSection = () => {
   return (
-    <section className={styles.SkillsSection}>
-      <Contacts />
-      <Languages />
-      <TechSkills />
-      <SoftSkills  />
-    </section>
+    <Container>
+      <section className={styles.skillsSection}>
+        <Contacts />
+        <Languages />
+        <TechSkills />
+        <SoftSkills />
+      </section>
+    </Container>
   )
 }
 

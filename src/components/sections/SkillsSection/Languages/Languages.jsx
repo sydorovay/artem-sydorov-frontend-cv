@@ -1,7 +1,9 @@
+import Container from '../../../Container/Container'
 import styles from './Languages.module.css'
 
 const Languages = () => {
   return (
+    <Container>
     <section className={styles.languages}>
       <h2>Languages</h2>
       <ul>
@@ -11,7 +13,8 @@ const Languages = () => {
         <li>English: Intermediate (B1, capable of reading technical documentation and writing work emails).</li>
         <li>German: German: Basic (A2).</li>
       </ul>
-    </section>
+      </section>
+    </Container>
   )
 }
 

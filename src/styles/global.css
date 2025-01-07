@@ -1,0 +1,237 @@
+/* ===============================
+    Global CSS Reset and Base Styles
+   =============================== */
+
+/* CSS Reset: Ensures consistent styling across browsers */
+*,
+*::before,
+*::after {
+  margin: 0;
+  /* Remove default margins */
+  padding: 0;
+  /* Remove default padding */
+  box-sizing: border-box;
+  /* Include borders and padding in element's total width/height */
+}
+
+html {
+  font-size: 16px;
+  /* Base font size for scaling */
+  line-height: 1.5;
+  /* Better readability */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  /* Smooth font rendering on macOS */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===============================
+    General Element Styles
+   =============================== */
+
+/* Reset list styles for unordered and ordered lists */
+ul,
+ol {
+  list-style: none;
+  /* Remove bullet points and numbers */
+}
+
+/* Reset default link styles */
+a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: inherit;
+  /* Inherit color from parent */
+}
+
+/* Ensure images are responsive */
+img {
+  display: block;
+  /* Prevent inline spacing issues */
+  max-width: 100%;
+  /* Ensure images never overflow their container */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+/* Form elements styling */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  /* Inherit font properties from parent */
+  border: none;
+  /* Remove default borders */
+  outline: none;
+  /* Remove default outline */
+}
+
+button {
+  cursor: pointer;
+  /* Ensure buttons show a pointer cursor */
+  background: none;
+  /* Remove default button background */
+}
+
+/* Accessible focus styles for keyboard users */
+:focus-visible {
+  outline: 2px dashed #007acc;
+  /* Dashed outline for focus */
+  outline-offset: 2px;
+  /* Add spacing between element and outline */
+}
+
+/* ===============================
+    Utility Classes
+   =============================== */
+
+/* Centralized container for layout */
+.container {
+    max-width: 100%;
+  /* Limit content width */
+  margin: 0 auto;
+  /* Center content horizontally */
+  padding: 0 1rem;
+  /* Add padding for smaller screens */
+}
+
+/* Text alignment utilities */
+.text-center {
+  text-align: center;
+  /* Center text horizontally */
+}
+
+/* Spacing utilities for margins and paddings */
+.mt-1 {
+  margin-top: 1rem;
+  /* Add top margin */
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+  /* Add bottom margin */
+}
+
+.p-1 {
+  padding: 1rem;
+  /* Add padding around element */
+}
+
+/* Visibility utilities */
+.hidden {
+  display: none;
+  /* Completely hide an element */
+}
+
+.visible {
+  display: block;
+  /* Force element to display as a block */
+}
+
+/* ===============================
+    Typography Styles
+   =============================== */
+
+/* Headings: Add consistent spacing and boldness */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  /* Tight line spacing for headings */
+  font-weight: 600;
+  /* Make headings bold */
+  margin-bottom: 1rem;
+  /* Add spacing below headings */
+}
+
+/* Paragraphs: Add default spacing for readability */
+p {
+  margin-bottom: 1rem;
+  /* Space below each paragraph */
+}
+
+/* ===============================
+    Debugging Helpers (For Development)
+   =============================== */
+
+/* Add a visible border for layout debugging */
+.debug-border {
+  border: 1px dashed red;
+  /* Red dashed border */
+}
+
+/* Add a semi-transparent background for debugging */
+.debug-bg {
+  background-color: rgba(255, 0, 0, 0.1);
+  /* Light red background */
+}
+
+/* Base styles (Mobile First) */
+/* These styles apply to all screen sizes by default */
+
+
+/* Extra small devices (phones, portrait mode) */
+/* For screens smaller than 576px */
+@media (max-width: 575px) {
+  .container {
+    padding: 5px;
+  }
+}
+
+/* Small devices (large phones) */
+/* For screens between 576px and 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Medium devices (tablets) */
+/* For screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 20px;
+    max-width: 720px;
+  }
+}
+
+/* Large devices (laptops) */
+/* For screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    padding: 25px;
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (desktops) */
+
+/* For screens between 1200px and 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    padding: 30px;
+    max-width: 1140px;
+  }
+}
+
+/* Ultra wide devices (4K monitors and larger) */
+/* For screens larger than 1400px */
+@media (min-width: 1400px) {
+  .container {
+    padding: 40px;
+    max-width: 1320px;
+  }
+}

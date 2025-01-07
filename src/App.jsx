@@ -11,9 +11,9 @@ const App = () => {
   return (
     <div className={styles.app}>
       <Header />
-      <main>
-        <ExperienceSection />
+      <main className={styles.mainContainer}>
         <SkillsSection />
+        <ExperienceSection />
       </main>
       <Footer />
     </div>

@@ -1,8 +1,11 @@
+import Container from '../../../Container/Container'
 import styles from './Contacts.module.css'
 
 const Contact = () => {
   return (
-    <section className={styles.contacts}>
+    <Container>
+      <section className={styles.contacts}>
+        <h2>Contacts</h2>
       <ul>
         <li> <a href="">GIT</a></li>
         <li><a href="">Linkedin </a></li>
@@ -10,7 +13,8 @@ const Contact = () => {
         <li><a href="">Facebook</a></li>
         <li><a href="">Gmail</a></li>
       </ul>
-    </section>
+      </section>
+    </Container>
   )
 }
 
