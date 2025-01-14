@@ -1,3 +1,5 @@
-/* .education {
-
-} */
+   .education {
+     display: flex;
+     flex-direction: column;
+     max-width: 100%;
+   }

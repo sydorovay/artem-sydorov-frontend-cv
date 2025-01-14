@@ -8,3 +8,10 @@
 
 }
 
+@media (max-width: 575px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+}

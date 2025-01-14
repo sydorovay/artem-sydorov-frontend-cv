@@ -27,8 +27,8 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--background-color);
+  color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   /* Smooth font rendering on macOS */
   -moz-osx-font-smoothing: grayscale;
@@ -85,25 +85,48 @@ button {
 
 /* Accessible focus styles for keyboard users */
 :focus-visible {
-  outline: 2px dashed #007acc;
+  outline: 3px dashed var(--focus-outline-color);
   /* Dashed outline for focus */
   outline-offset: 2px;
   /* Add spacing between element and outline */
 }
 
+
+/* =============================
+    Default Color Scheme 
+   =============================  */
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color:#c9e2c9;;
+  --background-color: #00020f;
+  --debug-bg-color: rgba(255, 0, 0, 0.1);
+  --debug-br-color: red;
+  --focus-outline-color: #02b75a;
+  --container-color: hsl(120, 24%, 69%);
+}
+
+
+
+
 /* ===============================
+
     Utility Classes
    =============================== */
 
 /* Centralized container for layout */
 .container {
-    max-width: 100%;
-  /* Limit content width */
+  max-width: 100%;
   margin: 0 auto;
-  /* Center content horizontally */
   padding: 0 1rem;
-  /* Add padding for smaller screens */
+  display: flex;
+  /* outline: 1px solid #048643; */
+  border-radius: 10px;
+  background-color: #000210;
+  margin-bottom: 10px;
 }
+
 
 /* Text alignment utilities */
 .text-center {
@@ -150,11 +173,9 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  /* Tight line spacing for headings */
   font-weight: 600;
-  /* Make headings bold */
   margin-bottom: 1rem;
-  /* Add spacing below headings */
+  color: var(--focus-outline-color);
 }
 
 /* Paragraphs: Add default spacing for readability */
@@ -169,25 +190,26 @@ p {
 
 /* Add a visible border for layout debugging */
 .debug-border {
-  border: 1px dashed red;
+  border: 1px dashed var(--debug-br-color);
   /* Red dashed border */
 }
 
 /* Add a semi-transparent background for debugging */
 .debug-bg {
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: var(--debug-bg-color);
   /* Light red background */
+
 }
 
 /* Base styles (Mobile First) */
 /* These styles apply to all screen sizes by default */
-
 
 /* Extra small devices (phones, portrait mode) */
 /* For screens smaller than 576px */
 @media (max-width: 575px) {
   .container {
     padding: 5px;
+    /* background-size: 576x576 px; */
   }
 }
 
@@ -196,6 +218,8 @@ p {
 @media (min-width: 576px) and (max-width: 767px) {
   .container {
     padding: 15px;
+    background-color: rgba(143, 238, 252, 0.213);
+    /* background-size: 768px × 1280px px */
   }
 }
 
@@ -205,6 +229,8 @@ p {
   .container {
     padding: 20px;
     max-width: 720px;
+    background-color: rgba(31, 33, 75, 0.378);
+    /* background-size: 1280px × 720px Розмір: 1280px × 720px або 1536px × 864px */
   }
 }
 
@@ -214,16 +240,19 @@ p {
   .container {
     padding: 25px;
     max-width: 960px;
+    background-color: rgba(237, 174, 253, 0.209);
+    /* 720px × 1280px */
   }
 }
 
 /* Extra large devices (desktops) */
-
 /* For screens between 1200px and 1399px */
 @media (min-width: 1200px) and (max-width: 1399px) {
   .container {
     padding: 30px;
     max-width: 1140px;
+    background-color: hsla(91, 96%, 81%, 0.343);
+    /* 1080px × 1920px */
   }
 }
 
@@ -233,5 +262,6 @@ p {
   .container {
     padding: 40px;
     max-width: 1320px;
+    background-color: rgba(255, 196, 151, 0.27);
   }
 }
