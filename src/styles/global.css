@@ -7,18 +7,13 @@
 *::before,
 *::after {
   margin: 0;
-  /* Remove default margins */
   padding: 0;
-  /* Remove default padding */
   box-sizing: border-box;
-  /* Include borders and padding in element's total width/height */
 }
 
 html {
   font-size: 16px;
-  /* Base font size for scaling */
   line-height: 1.5;
-  /* Better readability */
   scroll-behavior: smooth;
 }
 
@@ -42,25 +37,19 @@ body {
 ul,
 ol {
   list-style: none;
-  /* Remove bullet points and numbers */
 }
 
 /* Reset default link styles */
 a {
   text-decoration: none;
-  /* Remove underline from links */
   color: inherit;
-  /* Inherit color from parent */
 }
 
 /* Ensure images are responsive */
 img {
   display: block;
-  /* Prevent inline spacing issues */
   max-width: 100%;
-  /* Ensure images never overflow their container */
   height: auto;
-  /* Maintain aspect ratio */
 }
 
 /* Form elements styling */
@@ -69,26 +58,19 @@ input,
 textarea,
 select {
   font: inherit;
-  /* Inherit font properties from parent */
   border: none;
-  /* Remove default borders */
   outline: none;
-  /* Remove default outline */
 }
 
 button {
   cursor: pointer;
-  /* Ensure buttons show a pointer cursor */
   background: none;
-  /* Remove default button background */
 }
 
 /* Accessible focus styles for keyboard users */
 :focus-visible {
   outline: 3px dashed var(--focus-outline-color);
-  /* Dashed outline for focus */
   outline-offset: 2px;
-  /* Add spacing between element and outline */
 }
 
 
@@ -101,13 +83,12 @@ button {
   --secondary-color: #2ecc71;
   --text-color:#c9e2c9;;
   --background-color: #00020f;
-  --debug-bg-color: rgba(255, 0, 0, 0.1);
-  --debug-br-color: red;
+  --debug-bg-color: #ff00001a;
+  --debug-br-color: #ff0000;
   --focus-outline-color: #02b75a;
-  --container-color: hsl(120, 24%, 69%);
+  --container-color: #9dc39d;
+  --background-blue-color: #02165748;
 }
-
-
 
 
 /* ===============================
@@ -115,50 +96,31 @@ button {
     Utility Classes
    =============================== */
 
-/* Centralized container for layout */
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  /* outline: 1px solid #048643; */
-  border-radius: 10px;
-  background-color: #000210;
-  margin-bottom: 10px;
-}
-
-
 /* Text alignment utilities */
 .text-center {
   text-align: center;
-  /* Center text horizontally */
 }
 
 /* Spacing utilities for margins and paddings */
 .mt-1 {
   margin-top: 1rem;
-  /* Add top margin */
 }
 
 .mb-1 {
   margin-bottom: 1rem;
-  /* Add bottom margin */
 }
 
 .p-1 {
   padding: 1rem;
-  /* Add padding around element */
 }
 
 /* Visibility utilities */
 .hidden {
   display: none;
-  /* Completely hide an element */
 }
 
 .visible {
   display: block;
-  /* Force element to display as a block */
 }
 
 /* ===============================
@@ -181,7 +143,6 @@ h6 {
 /* Paragraphs: Add default spacing for readability */
 p {
   margin-bottom: 1rem;
-  /* Space below each paragraph */
 }
 
 /* ===============================
@@ -191,14 +152,11 @@ p {
 /* Add a visible border for layout debugging */
 .debug-border {
   border: 1px dashed var(--debug-br-color);
-  /* Red dashed border */
 }
 
 /* Add a semi-transparent background for debugging */
 .debug-bg {
   background-color: var(--debug-bg-color);
-  /* Light red background */
-
 }
 
 /* Base styles (Mobile First) */

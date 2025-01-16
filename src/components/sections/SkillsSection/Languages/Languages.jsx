@@ -6,16 +6,27 @@ const Languages = () => {
     <Container>
     <section className={styles.languages}>
       <h2>Languages</h2>
-      <ul>
-        <li>Ukrainian: Native</li>
-        <li>Russian: Proficient (C2, fluent in both written and spoken communication, including professional and academic contexts)</li>
-        <li>Polish Proficient Intermediate (B1, capable of reading technical documentation and writing work emails).</li>
-        <li>English: Intermediate (B1, capable of reading technical documentation and writing work emails).</li>
-        <li>German: German: Basic (A2).</li>
-      </ul>
+        <ul className={styles.list}>
+          <li className={styles.item}>
+            <span className={styles.language}>Ukrainian</span>: <span className={styles.level}>Native</span>
+          </li>
+          <li className={styles.item}>
+            <span className={styles.language}>Russian</span>: <span className={styles.level}>Proficient (C2)</span>
+          </li>
+          <li className={styles.item}>
+            <span className={styles.language}>Polish</span>: <span className={styles.level}>Intermediate (B1)</span>
+          </li>
+          <li className={styles.item}>
+            <span className={styles.language}>English</span>: <span className={styles.level}>Intermediate (B1)</span>
+          </li>
+          <li className={styles.item}>
+            <span className={styles.language}>German</span>: <span className={styles.level}>Basic (A2)</span>
+          </li>
+        </ul>
       </section>
     </Container>
   )
 }
 
 export default Languages
+
