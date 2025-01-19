@@ -83,11 +83,11 @@ button {
   --secondary-color: #2ecc71;
   --text-color:#c9e2c9;;
   --background-color: #00020f;
+  --background-blue-color: #00114643;
   --debug-bg-color: #ff00001a;
   --debug-br-color: #ff0000;
   --focus-outline-color: #02b75a;
-  --container-color: #9dc39d;
-  --background-blue-color: #02165748;
+  --container-color: #9dc39d; 
 }
 
 
