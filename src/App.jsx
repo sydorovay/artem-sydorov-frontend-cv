@@ -5,18 +5,21 @@ import SkillsSection from './components/sections/SkillsSection/SkillsSection';
 import Footer from './components/Footer/Footer';
 
 import styles from './styles/App.module.css';
+import Container from './components/Container/Container';
 
 const App = () => {
   // const [count, setCount] = useState(0)
   return (
+    <Container>
     <div className={styles.app}>
       <Header />
-      <main>
-        <ExperienceSection />
+      <main className={styles.mainContainer}>
         <SkillsSection />
+        <ExperienceSection />
       </main>
       <Footer />
-    </div>
+      </div>
+    </Container>
   )
 }
 
