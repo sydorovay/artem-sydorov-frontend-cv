@@ -1,19 +1,15 @@
-/* .header {
-width: 100%;
-padding: 20px
-} */
-
-/* .paragraph {
-
+.header {
+  width: 100%;
+  padding: 20px
 }
 
-.caption {
-  
-} */
+.paragraph {}
 
- /* .header {
-   display: flex;
-   flex-direction: column;
-   padding: 20px;
-   max-width: 100%;
- } */
+.caption {}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 100%;
+}
