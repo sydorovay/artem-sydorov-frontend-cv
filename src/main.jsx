@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import '../src/styles/global.css';
+import './styles/global.css';
 
 
 createRoot(document.getElementById('root')).render(

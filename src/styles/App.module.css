@@ -1,17 +1,16 @@
-.app {
+/* .app {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.mainContainer {
+/* .mainContainer {
   display: flex;
+  max-width: 100%;
 
 }
 
 @media (max-width: 575px) {
   .mainContainer {
-    display: flex;
     flex-direction: column;
-    max-width: 100%;
   }
-}
+} */
