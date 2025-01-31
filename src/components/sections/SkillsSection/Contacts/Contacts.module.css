@@ -1,74 +1,52 @@
-/* .contacts {
-  padding: 20px;
+.contacts {
   display: flex;
+  flex-direction: column;
+  padding: 16px;
+  align-items: center;
   max-width: 100%;
+  line-height: 1.8;
+  transition: transform 0.3s ease-in-out;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.contactsGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
 }
 
-.dropdownButton {
-  background-color: var(--secondary-color);
-  color: var(--background-color);
-  border: 2px solid var(--container-color);
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
+.contactsHeader{
+  text-decoration: underline;
+}
+.toggleButton {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 16px solid var(--secondary-color);
+  color: var( --secondary-color);
   cursor: pointer;
-  display: none;
-}
-
-.dropdownButton:hover {
-  background-color: var(--focus-outline-color);
-}
-
-
-.dropdownMenu {
   display: block;
-  background-color: var(--background-color);
-  border: 1px solid var(--container-color);
-  border-radius: 5px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 0;
+  align-items: center;
+  text-align: center;
+  margin: 12px auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-.dropdownMenu li {
-  padding: 8px 16px;
+.toggleButton:hover {
+  border-top-color: var(--focus-outline-color);
 }
 
-.dropdownMenu li a {
-  text-decoration: none;
-  color: var(--text-color);
+.toggleButton:active {
+  transform: scale(1.1);
 }
 
-.dropdownMenu li:hover {
-  background-color: var(--background-color);
+.expanded .toggleButton {
+  transform: rotate(180deg);
 }
 
-.show {
-  display: block;
-}
+
 
 @media (max-width: 768px) {
-  .dropdownButton {
-    display: inline-block;
-  }
 
-  .dropdownMenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    z-index: 10;
-  }
 
-  .show {
-    display: block;
-  }
-} */
+}

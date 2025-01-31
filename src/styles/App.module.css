@@ -1,9 +1,9 @@
-/* .app {
+.app {
   display: flex;
   flex-direction: column;
-} */
+}
 
-/* .mainContainer {
+.mainContainer {
   display: flex;
   max-width: 100%;
 
@@ -13,4 +13,8 @@
   .mainContainer {
     flex-direction: column;
   }
-} */
+
+  .mainContainer {
+    flex-direction: column;
+  }
+}

@@ -5,6 +5,7 @@ import SkillsSection from './components/sections/SkillsSection/SkillsSection';
 import Footer from './components/Footer/Footer';
 
 import styles from './styles/App.module.css';
+import './styles/global.css';
 import Container from './components/Container/Container';
 
 const App = () => {
