@@ -1,4 +1,4 @@
-import styles from './Container.module.css'
+import styles from './Container.module.css';
 
 const Container = ({ children, className = '' }) => {
   return (
@@ -8,5 +8,4 @@ const Container = ({ children, className = '' }) => {
   );
 };
 
-
-export default Container
+export default Container;
