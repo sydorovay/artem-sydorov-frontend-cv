@@ -1,9 +1,15 @@
-/* .languages {
-  margin: 16px 0;
+.languages {
+display: flex;
+  flex-direction: column;
   padding: 16px;
-  background-color: var(--background-color);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  max-width: 100%;
+  line-height: 1.8;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px var(--container-color);
+  border-bottom: 2px solid var(--container-color);
+  border-radius: 10px;
+  width: 250px
 }
 
 .title {
@@ -23,7 +29,6 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
-  border-bottom: 1px dashed var(--secondary-color);
 }
 
 .item:last-child {
@@ -69,4 +74,4 @@
   .item {
     font-size: 18px;
   }
-} */
+}

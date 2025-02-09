@@ -9,9 +9,9 @@ const Education = () => {
         <ul>
           <li>
             <h3>Курси - Fullstack Developer</h3>
-            <p>[Goit] — [Ukraine]
-              [09/2023] – [01/2025]
-              Основи HTML, CSS, JavaScript, React, TypeScript, Node, </p>
+            <p>Goit — Ukraine [09/2023] – [01/2025]
+            </p>
+              <p>Основи HTML, CSS, JavaScript, React, TypeScript, Node js. </p>
           </li>
         </ul>
       </section>
