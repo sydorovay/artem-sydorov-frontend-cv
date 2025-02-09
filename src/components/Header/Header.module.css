@@ -5,6 +5,7 @@
  border-radius: 10px;
  position: fixed;
  background-color: var(--modal-background);
+ width: 100%;
 }
 
 .container {

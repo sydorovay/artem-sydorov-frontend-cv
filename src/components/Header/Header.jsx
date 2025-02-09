@@ -25,9 +25,9 @@ const Header = () => {
 
           <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
             <ul>
-              <li><a href="/">Головна</a></li>
-              <li><a href="/about">Про нас</a></li>
-              <li><a href="/contact">Контакти</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About me</a></li>
+              <li><a href="/contact">Contacts</a></li>
             </ul>
           </nav>
         </div>
