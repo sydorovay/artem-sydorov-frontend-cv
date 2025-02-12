@@ -1,4 +1,4 @@
-.contacts {
+.contactsContainer {
   display: flex;
   flex-direction: column;
   padding: 16px;
@@ -7,11 +7,13 @@
   line-height: 1.8;
   transition: transform 0.3s ease-in-out;
   margin-top: 100px;
-box-shadow: 0 2px 4px var(--container-color);
+  box-shadow: 0 2px 4px var(--container-color);
   border-bottom: 2px solid var(--container-color);
   border-radius: 10px;
   width: 250px
 }
+
+
 
 .contactsGroup {
   display: flex;
@@ -19,16 +21,17 @@ box-shadow: 0 2px 4px var(--container-color);
   padding: 5px 0;
 }
 
-.contactsHeader{
+.contactsHeader {
   text-decoration: underline;
 }
+
 .toggleButton {
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-top: 16px solid var(--secondary-color);
-  color: var( --secondary-color);
+  color: var(--secondary-color);
   cursor: pointer;
   display: block;
   align-items: center;
@@ -51,7 +54,4 @@ box-shadow: 0 2px 4px var(--container-color);
 
 
 
-@media (max-width: 768px) {
-
-
-}
+@media (max-width: 768px) {}

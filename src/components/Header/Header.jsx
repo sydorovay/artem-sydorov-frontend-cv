@@ -13,7 +13,7 @@ const Header = () => {
   return (
     
     <header className={styles.header}>
-      <Container >
+      <Container  className={styles.headerContainer}>
         <div className={styles.container}>
           <h1 className={styles.logo}>Artem Sydorov</h1>
           <p className={styles.paragraph}>Welcome to my profession resume</p>
