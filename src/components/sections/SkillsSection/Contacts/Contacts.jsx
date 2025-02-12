@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <Container>
+    <Container className={styles.contactsContainer}>
       <section className={`${styles.contacts} ${isOpen ? styles.expanded : ''}`}>
         <h2 className={styles.contactsHeader}> Contacts</h2>
         <div className={styles.contactsGroup}>

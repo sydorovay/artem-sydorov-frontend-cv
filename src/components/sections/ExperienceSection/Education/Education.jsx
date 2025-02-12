@@ -1,9 +1,7 @@
-import Container from '../../../Container/Container';
 import styles from './Education.module.css'
 
 const Education = () => {
   return (
-    <Container>
       <section className={styles.education}>
         <h2>Education</h2>
         <ul>
@@ -15,7 +13,6 @@ const Education = () => {
           </li>
         </ul>
       </section>
-    </Container>
   )
 }
 

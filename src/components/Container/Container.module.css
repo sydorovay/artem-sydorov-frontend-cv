@@ -1,6 +1,15 @@
 .container {
+display: flex;
+  flex-direction: column;
+  padding: 16px;
+  align-items: center;
+  justify-self: center;
   max-width: 100%;
-  color: var(--text-color);
-  box-sizing: border-box;
+  line-height: 1.8;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px var(--container-color);
+  border-bottom: 2px solid var(--container-color);
+  border-radius: 10px;
+  width: 250px
 }
 
