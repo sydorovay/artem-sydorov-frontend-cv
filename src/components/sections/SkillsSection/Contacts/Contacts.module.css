@@ -3,11 +3,11 @@
   flex-direction: column;
   padding: 16px;
   align-items: center;
-  max-width: 100%;
+  /* max-width: 100%; */
   line-height: 1.8;
   transition: transform 0.3s ease-in-out;
-  margin-top: 100px;
-  box-shadow: 0 2px 4px var(--container-color);
+  margin-top: 50%;
+  /* box-shadow: 0 2px 4px var(--container-color); */
   /* border-bottom: 2px solid var(--container-color); */
   border-radius: 10px;
   width: 250px
