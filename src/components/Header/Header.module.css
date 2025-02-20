@@ -1,5 +1,5 @@
 .header {
-  padding: 15px ;
+  padding: 15px;
   color: var(--text-color);
   border-bottom: 2px solid var(--container-color);
   position: fixed;
@@ -21,10 +21,11 @@
 .logo {
   font-size: 24px;
   font-weight: bold;
-} 
+}
+
 .burger {
   position: fixed;
-  top: 3% ;
+  top: 3%;
   right: 5%;
   display: none;
   flex-direction: column;
@@ -54,6 +55,10 @@
   transform: rotate(-45deg) translate(5px, 5px);
 }
 
+/* .nav {
+  position: absolute;
+    max-width: 100%;
+} */
 .nav ul {
   list-style: none;
   display: flex;
@@ -75,6 +80,7 @@
   background: none;
   border: none;
   padding: 8px;
+  z-index: 1000;
 }
 
 .line {
@@ -111,7 +117,7 @@
 
   .nav {
     position: absolute;
-    top: 80px;
+    top: 5%;
     left: 0;
     width: 100%;
     background: var(--modal-background);
@@ -119,6 +125,8 @@
     text-align: center;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
+    border: 2px solid var(--container-color);
+    border-radius: 5px;
   }
 
   .nav.open {
