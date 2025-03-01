@@ -1,5 +1,5 @@
-/* .techSkills {
-display: flex;
+.techSkills {
+  display: flex;
   flex-direction: column;
   padding: 16px;
   align-items: center;
@@ -8,6 +8,7 @@ display: flex;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 2px 4px var(--container-color);
   border-bottom: 2px solid var(--container-color);
+  background-color: var(--modal-background);
   border-radius: 10px;
-  width: 250px
-} */
+  min-width: 320px;
+}

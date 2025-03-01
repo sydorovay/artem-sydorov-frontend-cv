@@ -1,7 +1,11 @@
 .footer {
 display: flex;
 flex-direction: column;
-gap: 1px;
 align-items: center;
 margin-top: 24px;
+line-height: 6px;
+}
+
+.license{
+  font-size: 70%;
 }

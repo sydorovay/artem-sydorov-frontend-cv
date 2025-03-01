@@ -1,7 +1,6 @@
 .skillsSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
- padding: 8px;
- gap: 24px;
+  gap: 24px;
+  min-width: 320px;
 }
