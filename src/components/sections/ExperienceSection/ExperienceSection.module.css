@@ -1,9 +1,5 @@
-/* 
-.experienceSection {
+.experienceContainer {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px;
-    gap: 24px;
-  
-} */
+  flex-direction: column;
+  margin: 24px auto;
+}

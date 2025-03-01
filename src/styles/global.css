@@ -23,11 +23,16 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #1e1e1e, #2a2a2a);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased; 
   /* Smooth font rendering on macOS */
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url('/public/images/background-ele.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 @media (prefers-color-scheme: light) {
