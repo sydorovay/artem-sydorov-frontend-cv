@@ -1,11 +1,12 @@
 .footer {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 24px;
-line-height: 6px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  line-height: 6px;
 }
 
-.license{
+.license {
   font-size: 70%;
 }

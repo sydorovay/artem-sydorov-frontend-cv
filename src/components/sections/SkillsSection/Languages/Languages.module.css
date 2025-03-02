@@ -10,7 +10,7 @@ display: flex;
   border-bottom: 2px solid var(--container-color);
   background-color: var(--modal-background);
   border-radius: 10px;
-   min-width: 320px;
+  min-width: 320px;
 }
 
 .title {

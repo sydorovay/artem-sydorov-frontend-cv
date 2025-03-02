@@ -1,6 +1,13 @@
-.skillsSection {
+.skillsSection{
   display: flex;
   flex-direction: column;
   gap: 24px;
   min-width: 320px;
+}
+
+@media screen and (min-width: 1024px) {
+  .skillsSectionContainer {
+    position: absolute;
+  left: 40px;
+  }
 }

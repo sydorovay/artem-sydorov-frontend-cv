@@ -5,16 +5,8 @@
 
 .mainContainer {
   display: flex;
-  max-width: 100%;
-
+  flex-direction: column;
 }
 
 @media (max-width: 575px) {
-  .mainContainer {
-    flex-direction: column;
-  }
-
-  .mainContainer {
-    flex-direction: column;
-  }
 }

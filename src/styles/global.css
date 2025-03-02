@@ -28,7 +28,7 @@ body {
   /* Smooth font rendering on macOS */
   -moz-osx-font-smoothing: grayscale;
 
-  background-image: url('/public/images/background-ele.webp');
+  background-image: url('/public/images//backgroundMin.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -101,7 +101,7 @@ button {
   --debug-br-color: #ff0000;
   --focus-outline-color: #02b75a;
   --container-color: #9dc39d; 
-  --modal-background: #053743;
+  --modal-background: #011932;
 }
 
 
@@ -180,19 +180,14 @@ p {
 /* Extra small devices (phones, portrait mode) */
 /* For screens smaller than 576px */
 @media (max-width: 575px) {
-  .container {
-    padding: 5px;
-  
-    /* background-size: 576x576 px; */
-  }
+
 }
 
 /* Small devices (large phones) */
 /* For screens between 576px and 767px */
 @media (min-width: 576px) and (max-width: 767px) {
   .container {
-    padding: 15px;
-    background-color: rgb(143, 237, 252);
+    
     /* background-size: 768px × 1280px px */
   }
 }
