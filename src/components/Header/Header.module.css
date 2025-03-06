@@ -110,6 +110,9 @@
 .nav.open {
   display: block;
 }
+.paragraph {
+  margin: 0;
+}
 
 @media (max-width: 768px) {
   .burger {

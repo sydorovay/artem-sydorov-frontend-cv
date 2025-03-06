@@ -9,7 +9,7 @@ import styles from './SkillsSection.module.css'
 
 const SkillsSection = () => {
   return (
-    <Container>
+    <Container className={styles.skillsSectionContainer}>
       <section className={styles.skillsSection}>
         <Contacts />
         <Languages />
