@@ -56,23 +56,6 @@
   transform: rotate(-45deg) translate(5px, 5px);
 }
 
-/* .nav {
-  position: absolute;
-    max-width: 100%;
-} */
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  padding: 20px 0;
-}
-
-.nav a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
 .burger {
   display: flex;
   flex-direction: column;
@@ -103,13 +86,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.nav {
-  display: none;
-}
-
-.nav.open {
-  display: block;
-}
 .paragraph {
   margin: 0;
 }
@@ -117,23 +93,5 @@
 @media (max-width: 768px) {
   .burger {
     display: flex;
-  }
-
-  .nav {
-    position: absolute;
-    top: 5%;
-    left: 0;
-    width: 100%;
-    background: var(--modal-background);
-    flex-direction: column;
-    text-align: center;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease;
-    border: 2px solid var(--container-color);
-    border-radius: 5px;
-  }
-
-  .nav.open {
-    transform: translateY(0);
   }
 }
