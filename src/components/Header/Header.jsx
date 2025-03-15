@@ -10,6 +10,10 @@ const Header = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <Container className={styles.headerContainer}>
@@ -21,7 +25,8 @@ const Header = () => {
             <span className={menuOpen ? styles.lineOpen : styles.line}></span>
             <span className={menuOpen ? styles.lineOpen : styles.line}></span>
           </button>
-          <Navigation menuOpen={menuOpen} />
+          {/* Передаємо onClose */}
+          <Navigation menuOpen={menuOpen} onClose={closeMenu} />
         </div>
       </Container>
     </header>
