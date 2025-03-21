@@ -3,10 +3,17 @@
   flex-direction: column;
 }
 
-.mainContainer {
+/* .mainContainer {
   display: flex;
   flex-direction: column;
-}
+} */
 
 @media (max-width: 575px) {
+}
+
+@media (min-width: 992px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: row;
+  }
 }

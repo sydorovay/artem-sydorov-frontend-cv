@@ -7,16 +7,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .experienceSection {
-    min-width: 900px;
-  }
-
   .experienceContainer {
-    position: relative;
-    right: 0;
+
+    
+    right: 5%;
     display: flex;
-    flex-direction: column;
-    margin: 24px auto;
     min-width: 320px;
     width: 70vh;
   }
