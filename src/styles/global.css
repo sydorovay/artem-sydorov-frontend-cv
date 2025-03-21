@@ -174,11 +174,8 @@ p {
   background-color: var(--debug-bg-color);
 }
 
-/* Base styles (Mobile First) */
-/* These styles apply to all screen sizes by default */
 
 /* Extra small devices (phones, portrait mode) */
-/* For screens smaller than 576px */
 @media (max-width: 575px) {
 
 }
@@ -188,49 +185,45 @@ p {
 @media (min-width: 576px) and (max-width: 767px) {
   .container {
     
-    /* background-size: 768px × 1280px px */
+    background-size: 768px × 1280px px
   }
 }
 
 /* Medium devices (tablets) */
 /* For screens between 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
-  .container {
+  /* .container {
     padding: 20px;
     max-width: 720px;
     background-color: rgb(31, 33, 75);
-    /* background-size: 1280px × 720px Розмір: 1280px × 720px або 1536px × 864px */
-  }
+    background-size: 1280px × 720px Розмір: 1280px × 720px або 1536px × 864px
+  } */
 }
 
 /* Large devices (laptops) */
-/* For screens between 992px and 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
+  /* .container {
     padding: 25px;
     max-width: 960px;
     background-color: rgba(166, 8, 206, 0.209);
-    /* 720px × 1280px */
-  }
+  } */
 }
 
 /* Extra large devices (desktops) */
-/* For screens between 1200px and 1399px */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .container {
+  /* .container {
     padding: 30px;
     max-width: 1140px;
     background-color: hsl(91, 79%, 34%);
-    /* 1080px × 1920px */
-  }
+  } */
 }
 
-/* Ultra wide devices (4K monitors and larger) */
+
 /* For screens larger than 1400px */
 @media (min-width: 1400px) {
-  .container {
+  /* .container {
     padding: 40px;
     max-width: 1320px;
     background-color: rgb(146, 71, 15);
-  }
+  } */
 }
